@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+#container {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 4fr;
+	gap: 10px;
+}
+
+#sidebar {
+	grid-area: 1 / 1 / 4 / 2;
+	padding: 20px;
+	background: lightblue;
+	color: white;
+	font-size: 20px;
+	
+}
+
+#topBar1 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	background: blue;
+	height: 50px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
