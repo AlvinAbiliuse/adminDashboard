@@ -96,6 +96,9 @@ body {
 
 
 
+.input {
+	flex: 1;
+}
 
 input {
 	flex: 1;
@@ -223,6 +226,11 @@ li {
 	}
 }
 
+img {
+	width: 20px;
+	align-self: center;
+}
+
 li img {
 	position: relative;
 	bottom: 2px;
@@ -241,5 +249,15 @@ li img {
 		padding-right: 10px;
 		filter: invert(100%) sepia(100%) saturate(0%) 
 				hue-rotate(137deg) brightness(103%) contrast(101%);
-}
 	}
+}
+
+
+#leftCards .cards:hover {
+	position: relative;
+	bottom: 6px;
+	right: 6px;
+	box-shadow: 4px 4px 10px lightgray;
+	width: 101%;
+	height: 101%;
+}
