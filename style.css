@@ -158,6 +158,11 @@ a {
 	color: inherit;
 }
 
+#header a:hover,
+#lowerHeader a:hover {
+	text-shadow: -1px 1px 1px lightgray;
+}
+
 #sidebar a:hover {
 	text-shadow: -1px 1px 4px #97baff;
 }
@@ -165,6 +170,8 @@ a {
 .logo {
 	font-size: 28px;
 	font-weight: bold;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #mainContent h3 {
@@ -266,8 +273,8 @@ li img {
 	bottom: 6px;
 	right: 6px;
 	box-shadow: 4px 4px 10px lightgray;
-	width: 101%;
-	height: 101%;
+	width: 103%;
+	height: 103%;
 }
 
 button {
