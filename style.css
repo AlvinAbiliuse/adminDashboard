@@ -269,12 +269,8 @@ li img {
 
 
 #leftCards .cards:hover {
-	position: relative;
-	bottom: 6px;
-	right: 6px;
+	transform: scale(1.02); 
 	box-shadow: 4px 4px 10px lightgray;
-	width: 103%;
-	height: 103%;
 }
 
 button {
