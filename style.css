@@ -269,7 +269,7 @@ li img {
 
 
 #leftCards .cards:hover {
-	transform: scale(1.02); 
+	transform: scale(1.01); 
 	box-shadow: 4px 4px 10px lightgray;
 }
 
