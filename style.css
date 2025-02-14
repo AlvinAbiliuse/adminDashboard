@@ -2,21 +2,20 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	line-height: 1.4em
+	line-height: 1.4em;
 }
 
 html {
 	height: 100%;
 }
 
-
 body {
 	font-family: sans-serif;
 	background: #f0f0f0;
 	height: 100%;
-
+	max-width: 1440px;
+	margin: 0 auto;
 }
-
 
 #container {
 	display: grid;
@@ -29,22 +28,17 @@ body {
 #sidebar {
 	grid-column: 1 / 2;
 	grid-row: 1 / -1;
-	padding-top: 30px;
-	padding-left: 30px;
+	padding: 30px;
 	background: #4981f2;
 	color: white;
 	font-size: 16px;
-	
+
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-
 }
 
-
-
-
-#header, 
+#header,
 #lowerHeader {
 	background: white;
 	padding: 5px 40px;
@@ -86,15 +80,11 @@ body {
 
 #leftMainContent {
 	padding: 0 20px;
-	
+
 	.cards {
 		border-left: 8px solid #f2cc49;
 	}
 }
-
-
-
-
 
 .input {
 	flex: 1;
@@ -116,8 +106,6 @@ input:focus {
 	outline: 3px solid gray;
 	height: 45px;
 	font-size: 20px;
-	
-	
 }
 
 #leftCards {
@@ -127,7 +115,6 @@ input:focus {
 	grid-auto-rows: 200px;
 	margin-top: 15px;
 	gap: 20px;
-
 }
 
 .cards {
@@ -191,12 +178,12 @@ li {
 	font-size: 20px;
 	font-weight: bold;
 	letter-spacing: 0.02em;
-	margin-top: 15px
+	margin-top: 15px;
 }
 
 #rightMainContent {
 	.title {
-		font-size: 14px ;
+		font-size: 14px;
 		font-weight: bold;
 		color: black;
 	}
@@ -210,9 +197,9 @@ li {
 	}
 
 	.innerInfo {
-	margin: 5px;
-	padding: 10px;
-	padding-bottom: 20px;
+		margin: 5px;
+		padding: 10px;
+		padding-bottom: 20px;
 	}
 }
 
@@ -252,8 +239,8 @@ li img {
 	bottom: 2px;
 	width: 45px;
 	padding-right: 20px;
-	filter: invert(100%) sepia(100%) saturate(0%) 
-			hue-rotate(137deg) brightness(103%) contrast(101%);
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(137deg)
+		brightness(103%) contrast(101%);
 }
 
 #logo {
@@ -262,14 +249,13 @@ li img {
 	img {
 		width: 55px;
 		padding-right: 10px;
-		filter: invert(100%) sepia(100%) saturate(0%) 
-				hue-rotate(137deg) brightness(103%) contrast(101%);
+		filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(137deg)
+			brightness(103%) contrast(101%);
 	}
 }
 
-
 #leftCards .cards:hover {
-	transform: scale(1.01); 
+	transform: scale(1.01);
 	box-shadow: 4px 4px 10px lightgray;
 }
 
@@ -311,3 +297,18 @@ button {
 	padding-bottom: 2px;
 }
 
+.sidebarBtn {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	#sidebar {
+		display: none;
+	}
+	.container {
+		display: block;
+	}
+	.sidebarBtn {
+		display: initial;
+	}
+}
