@@ -56,19 +56,16 @@ body {
 }
 
 #lowerHeader h3 {
-	width: 250px;
+	max-width: 250px;
 }
 .account {
-	width: 30px;
+	width: 50px;
 	height: 30px;
 	background: #f2cc49;
 	border-radius: 30px;
 }
 
-#lowerHeader .account {
-	width: 50px;
-	height: 50px;
-}
+#lowerHeader
 
 #mainContent {
 	display: grid;
@@ -301,6 +298,17 @@ button {
 	display: none;
 }
 
+.sidebarCloseBtn {
+	display: none;
+}
+
+.showSidebar {
+	position: absolute;
+	.sidebarCloseBtn {
+		display: show;
+	}
+}
+
 @media (max-width: 800px) {
 	#sidebar {
 		display: none;
@@ -310,5 +318,17 @@ button {
 	}
 	.sidebarBtn {
 		display: initial;
+	}
+}
+
+@media (max-width: 480px) {
+	#mainContent {
+		display: block;
+	}
+	#leftCards {
+		display: block;
+	}
+	.cards {
+		margin-bottom: 20px;
 	}
 }
